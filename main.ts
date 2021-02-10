@@ -116,6 +116,7 @@ forever(function () {
     }
     if (info.score() == 8000) {
         game.showLongText("You have to be ciel0beats to get here", DialogLayout.Full)
+        pause(2000)
+        game.over(true)
     }
-    game.over(true)
 })
