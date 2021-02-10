@@ -104,4 +104,18 @@ forever(function () {
             `, SpriteKind.Player)
         myEnemy.follow(mySprite)
     }
+    if (info.score() == 5010) {
+        myEnemy.destroy()
+        myEnemy.setFlag(SpriteFlag.AutoDestroy, true)
+    }
+    if (info.score() == 6000) {
+        info.changeLifeBy(1)
+    }
+    if (info.score() == 8000) {
+        info.changeLifeBy(1)
+    }
+    if (info.score() == 8000) {
+        game.showLongText("You have to be ciel0beats to get here", DialogLayout.Full)
+    }
+    game.over(true)
 })
