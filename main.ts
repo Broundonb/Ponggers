@@ -115,7 +115,7 @@ forever(function () {
         info.changeLifeBy(1)
     }
     if (info.score() == 8000) {
-        game.showLongText("You have to be ciel0beats to get here", DialogLayout.Full)
+        game.showLongText("You have to be broundonb to get here", DialogLayout.Full)
         pause(2000)
         game.over(true)
     }
